@@ -8,57 +8,42 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <link rel="icon" href="./assets/img-logo.png">
+    <title>NB HAMBURGUES</title>
 </head>
 
 <body>
     <header>
-        <button>Todos os Lanches</button> <!--ForEach-->
-        <button>Descontos</button><!--Map-->
-        <button>Filtrar</button><!--Filter-->
-        <button>Total</button><!--Reduce-->
+
+        <img src="./assets/img-logo.png" class="img-logo">
+
+        <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+            <li class="nav"><button class="show-all">Todos os Lanches</button> <!--ForEach--></li>
+            <li class="nav"> <button class="discont">Descontos</button><!--Map--></li>
+            <li class="nav"> <button class="filter-all">Filtrar</button><!--Filter--></li>
+            <li class="nav"> <button class="sum-itens">Total</button><!--Reduce--></li>
+        </ul>
     </header>
+
     <main>
-        <div class="options"><img src="./assets/xsalada.jpeg" alt="">
-            <h5 class="text">X-Salada</h5>
-            <p class="text">R$30,00</p>
-            <p class="text info">Ingredientes: Pão de hambúrguer, Queijo cheddar, Alface, TomateCebola-roxa, Maionese
-            </p>
-        </div>
-        <div class="options"><img src="./assets/xbacon.png" alt="">
-            <h5 class="text">X-Bacon</h5>
-            <p class="text">R$34,00</p>
-            <p class="text info">Ingredientes: Pão de hambúrguer, Queijo cheddar, Alface, TomateCebola-roxa, Maionese
-            </p>
-        </div>
-        <div class="options"><img src="./assets/bacon-egg.png" alt="">
-            <h5 class="text">X-Bacon-Egg</h5>
-            <p class="text">R$39,00</p>
-            <p class="text info">Ingredientes: Pão de hambúrguer, Queijo cheddar, Alface, TomateCebola-roxa, Maionese
-            </p>
-        </div>
-        <div class="options"><img src="./assets/monstruoso.png" alt="">
-            <h5 class="text">Monstruoso</h5>
-            <p class="text">R$50,00</p>
-            <p class="text info">Ingredientes: Pão de hambúrguer, Queijo cheddar, Alface, TomateCebola-roxa, Maionese
-            </p>
-        </div>
-        <div class="options"><img src="./assets/xvegan.png" alt="">
-            <h5 class="text">X-Vegano</h5>
-            <p class="text">R$55,00</p>
-            <p class="text info">Ingredientes: Pão de hambúrguer, Queijo cheddar, Alface, TomateCebola-roxa, Maionese
-            </p>
-        </div>
-        <div class="options"><img src="./assets/monstruoso-vegan.png" alt="">
-            <h5 class="text">Monstruoso Vegano</h5 class="text">
-            <p class="text">R$45,00</p>
-            <p class="text info">Ingredientes: Pão de hambúrguer, Queijo cheddar, Alface, TomateCebola-roxa, Maionese
-            </p>
-        </div>
+        <ul id="item"></ul>
     </main>
 
 </body>
+
+<script src="./products.js"></script>
 <script src="./document.js"></script>
+<script src="./mobile.navbar.js"></script>
 
 </html>
