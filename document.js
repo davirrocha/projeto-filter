@@ -18,7 +18,7 @@ function showAll(porductArray) {
            
             <div class="text">
             <p>${products.name}</p>
-            <p class="price-item">R$${products.price.toFixed(2)}</p>
+            <p class="price-item">${new Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(products.price,)}</p>
             <p class="ingredient">${products.ingredient}</p>
           </div>
         </li>
@@ -51,8 +51,8 @@ function sumItem() {
     const discontItens = sum * 0.9
     list.innerHTML = `
     <li class="div-total">
-        <p class="total">Valor total de todos os itens, SEM DESCONTO: <span class="no-discont">${sum.toFixed(2)}</span></p>
-        <p class="total">Valor total de todos os itens, COM DESCONTO:<span class="with-discont">${discontItens.toFixed(2)}</span></p>
+        <p class="total">Valor total de todos os itens, SEM DESCONTO: <span class="no-discont">${new Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(discontItens,)}</span></p>
+        <p class="total">Valor total de todos os itens, COM DESCONTO:<span class="with-discont">${new Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(discontItens,)}</span></p>
     </li>
     `
 
